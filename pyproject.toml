@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bencheetah"
+version = "0.2.0"
+description = "Simple and fast benchmarking utilities for Python functions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+  { name = "JobAlcantara", email = "jalcan27@itam.mx" }
+]
+
+keywords = ["benchmark", "performance", "python", "timing", "profiling", "plotting"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Testing",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.6"]
+dev  = ["pytest>=8", "matplotlib>=3.6"]
+
+[project.urls]
+Homepage = "https://github.com/JobAlcantara/bencheetah"
+Repository = "https://github.com/JobAlcantara/bencheetah"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
