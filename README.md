@@ -13,7 +13,7 @@
 
 ## Why bencheetah?
 
-`timeit` is verbose. `cProfile` is overkill for quick comparisons. **bencheetah** gives you:
+Simple, useful and fast. **bencheetah** gives you:
 
 - Statistical timing (mean, min, max, stdev) for a single function.
 - Side-by-side comparison of multiple implementations.
@@ -123,7 +123,7 @@ The chart shows mean execution time (±1 stdev error bars) vs input size, one li
 
 ---
 
-## API Reference
+## Functions
 
 ### `benchmark(func, *args, repeats=5, warmup=1, **kwargs) → dict`
 
@@ -220,7 +220,7 @@ Automatically selects the most readable time unit (ns, µs, ms, s).
 ## Tutorial Notebook
 
 A step-by-step tutorial with all four functions is available as a Jupyter notebook.
-Click below to open it directly in Google Colab — no local setup required:
+Click below to open it directly in Google Colab:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JobAlcantara/bencheetah/blob/main/notebooks/tutorial.ipynb)
 
@@ -276,7 +276,8 @@ bencheetah/
 │   └── workflows/
 │       └── ci.yml
 ├── Dockerfile
-└── pyproject.toml
+├── pyproject.toml
+└── README.md
 ```
 
 ---
